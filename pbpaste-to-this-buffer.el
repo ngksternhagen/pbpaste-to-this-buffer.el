@@ -9,3 +9,5 @@
   "paste to the current buffer using pbpaste"
   (interactive)
   (append-string-to-buffer (shell-command-to-string "pbpaste") (current-buffer)))
+
+;; TODO handle case where current buffer is remote, such as TRAMP, ssh, etc
